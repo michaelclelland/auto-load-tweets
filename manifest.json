@@ -1,0 +1,22 @@
+{
+	"name": "Auto load Tweets",
+	"description": "Refresh your Twitter feed automatically. Always see the latest tweets without having to manually click 'View new Tweets' at the top of the timeline.",
+	"manifest_version": 2,
+	"version": "1.1",
+	"content_scripts": [
+	    {
+	    	"matches": ["http://*.twitter.com/*","https://*.twitter.com/*"],
+	     	"js": ["background.js"]
+	    }
+	 ],
+  	"developer": {
+  		"name": "Michael Clelland",
+  		"url": "http://www.michaelclelland.com"
+  	},
+  	"icons": { 
+  		"16": "user_icon_template_16.png",
+  		"19": "user_icon_template_19.png",
+  		"48": "user_icon_template_48.png",
+  		"128": "user_icon_template_128.png"
+  	}
+}
